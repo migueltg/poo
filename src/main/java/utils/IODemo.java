@@ -1,11 +1,11 @@
 package utils;
 
 import upm.jbb.IO;
-public class PruebaIO {
+public class IODemo {
     public static void main(String[] args) {
         String msg = IO.in.readString("Escribe un mensaje");
         IO.out.println("Valor del mensaje: " + msg);
-        int entero = IO.in.readInt("Dame un número entero");
+        int entero = IO.in.readInt("Dame un nï¿½mero entero");
         IO.out.println("Valor del entero: " + entero);
         double decimal = IO.in.readDouble("Dame un numero decimal");
         IO.out.println("Valor del decimal: " + decimal);
