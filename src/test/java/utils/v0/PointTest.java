@@ -9,7 +9,7 @@ public class PointTest {
         if (point.getX() == 0 && point.getY() == 0)
             System.out.println("...Prueba constructor sin parámetros CORRECTA");
         else
-            System.out.println("ERROR: p. constructor sin parámetros"+ point.getX() + ","
+            System.out.println("ERROR: p. constructor sin parámetros" + point.getX() + ","
                     + point.getY());
     }
 
@@ -38,6 +38,15 @@ public class PointTest {
             System.out.println("ERROR: p. fase:" + point.toString() + ":" + point.phase());
     }
 
+    public void testTranslate() {
+        Point point = new Point(2, 3);
+        point.translate(new Point(3, 2));
+        if (point.getX() == -1 && point.getY() == 1)
+            System.out.println("...Prueba translate CORRECTA");
+        else
+            System.out.println("ERROR: p. translate:" + point.toString());
+    }
+
     public void testToString() {
         Point point = new Point(2, 3);
         if ("Point[2,3]".equals(point.toString()))
@@ -51,6 +60,7 @@ public class PointTest {
         this.testPointIntInt();
         this.testModule();
         this.testPhase();
+        this.testTranslate();
         this.testToString();
     }
 
