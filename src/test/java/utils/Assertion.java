@@ -2,7 +2,6 @@ package utils;
 
 public class Assertion {
 
-    // x >= 0
     public void parameter(int x) {
         assert x >= 0 : "x debe se >= 0";
     }
