@@ -21,7 +21,7 @@ public class Point {
     }
 
     public int getY() {
-        return this.x;
+        return this.y;
     }
 
     public double module() {
