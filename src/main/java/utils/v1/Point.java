@@ -12,6 +12,14 @@ public class Point {
     public Point() {
     }
 
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
     public double module() {
         return 0;
     }
