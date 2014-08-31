@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class PointTest {
-    //private Point[] points = {new Point(2, 3), new Point(3, 3), new Point(-4, 2), new Point(1, 0)};
+    // private Point[] points = {new Point(2, 3), new Point(3, 3), new Point(-4,2), new Point(1, 0)};
 
     private int[] xs = {2, 3, -4, 1};
 
@@ -19,8 +19,8 @@ public class PointTest {
 
     private void testPuntoIntInt(int x, int y) {
         Point pt = new Point(x, y);
-        assertEquals(pt.getX(), x);
-        assertEquals(pt.getY(), y);
+        assertEquals(x, pt.getX());
+        assertEquals(y, pt.getY());
     }
 
     @Test
@@ -33,39 +33,39 @@ public class PointTest {
     @Test
     public void testPunto() {
         Point pt = new Point();
-        assertEquals(pt.getX(), 0);
-        assertEquals(pt.getY(), 0);
+        assertEquals(0, pt.getX());
+        assertEquals(0, pt.getY());
     }
 
-    private void testModulo(int x, int y, double modulo) {
+    private void testModule(int x, int y, double module) {
         Point pt = new Point(x, y);
-        assertEquals(pt.module(), modulo, 0.0001);
+        assertEquals(module, pt.module(), 10e-4);
     }
 
     @Test
-    public void testModulo() {
+    public void testModule() {
         for (int i = 0; i < xs.length; i++) {
-            this.testModulo(xs[i], ys[i], modules[i]);
+            this.testModule(xs[i], ys[i], modules[i]);
         }
     }
 
-    private void testFase(int x, int y, double fase) {
+    private void testPhase(int x, int y, double phase) {
         Point pt = new Point(x, y);
-        assertEquals(pt.phase(), fase, 0.0001);
+        assertEquals(phase, pt.phase(), 10e-4);
     }
 
     @Test
-    public void testFase() {
+    public void testPhase() {
         for (int i = 0; i < xs.length; i++) {
-            this.testFase(xs[i], ys[i], phases[i]);
+            this.testPhase(xs[i], ys[i], phases[i]);
         }
     }
 
     private void testTranslate(int x, int y) {
         Point pt = new Point(x, y);
         pt.translate(new Point(1, 1));
-        assertEquals(pt.getX(), x - 1);
-        assertEquals(pt.getY(), y - 1);
+        assertEquals(x - 1, pt.getX());
+        assertEquals(y - 1, pt.getY());
     }
 
     @Test
@@ -75,9 +75,9 @@ public class PointTest {
         }
     }
 
-    private void testToString(int x, int y, String cadena) {
+    private void testToString(int x, int y, String string) {
         Point pt = new Point(x, y);
-        assertEquals(pt.toString(), cadena);
+        assertEquals(string, pt.toString());
     }
 
     @Test
