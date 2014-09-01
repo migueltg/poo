@@ -6,7 +6,7 @@ public class Assertion {
         assert x >= 0 : "x debe se >= 0";
     }
 
-    public void defautlIf() {
+    public void defaultIf() {
         int x = 2;
         if (x == 0) {
             x++;
