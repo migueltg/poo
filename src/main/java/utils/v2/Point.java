@@ -1,4 +1,4 @@
-package utils;
+package utils.v2;
 
 public class Point {
     private int x, y;
@@ -40,26 +40,6 @@ public class Point {
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
-    }
-    
-    @Override
-    public boolean equals(Object obj) {
-        boolean result;
-        if (obj == null || this.getClass() != obj.getClass()) {
-            result = false;
-        } else {
-            final Point otro = (Point) obj;
-            result = otro.getX() == this.x && otro.getY() == this.y;
-        }
-        return result;
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = prime + x;
-        result = prime * result + y;
-        return result;
     }
 
 }
