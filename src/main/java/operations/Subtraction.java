@@ -19,4 +19,10 @@ public class Subtraction {
     public int subtract() {
         return this.operator1 - this.operator2;
     }
+
+    @Override
+    public String toString() {
+        return "[" + operator1 + "-" + operator2 + "]";
+    }
+
 }
