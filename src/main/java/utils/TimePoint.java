@@ -3,13 +3,13 @@ package utils;
 public class TimePoint extends Point {
     private int t;
 
-    public TimePoint() {
-        this(0, 0, 0);
-    }
-
     public TimePoint(int x, int y, int t) {
         super(x, y); // Si no se especifica, es: super();
         this.setT(t);
+    }
+
+    public TimePoint() {
+        this(0, 0, 0);
     }
 
     public int getT() {
