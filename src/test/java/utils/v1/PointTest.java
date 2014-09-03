@@ -40,7 +40,7 @@ public class PointTest {
 
     @Test
     public void testTranslate() {
-        this.point.translate(new Point(1,1));
+        this.point.translateOrigin(new Point(1,1));
         assertEquals(1, point.getX());
         assertEquals(2, point.getY());
     }

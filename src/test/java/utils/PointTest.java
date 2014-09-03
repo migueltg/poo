@@ -63,7 +63,7 @@ public class PointTest {
 
     private void testTranslate(int x, int y) {
         Point pt = new Point(x, y);
-        pt.translate(new Point(1, 1));
+        pt.translateOrigin(new Point(1, 1));
         assertEquals(x - 1, pt.getX());
         assertEquals(y - 1, pt.getY());
     }

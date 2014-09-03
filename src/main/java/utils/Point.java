@@ -32,7 +32,7 @@ public class Point {
         return Math.atan((double) this.y / this.x);
     }
 
-    public void translate(Point origin) {
+    public void translateOrigin(Point origin) {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }

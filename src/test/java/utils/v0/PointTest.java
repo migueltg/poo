@@ -40,7 +40,7 @@ public class PointTest {
 
     public void testTranslate() {
         Point point = new Point(2, 3);
-        point.translate(new Point(3, 2));
+        point.translateOrigin(new Point(3, 2));
         if (point.getX() == -1 && point.getY() == 1)
             System.out.println("...Prueba translate CORRECTA");
         else
