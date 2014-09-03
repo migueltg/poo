@@ -14,16 +14,19 @@ public class Intervalo {
     public int getMax() {
         return 0;
     }
-    
-    public boolean incluido(Intervalo otro){
+
+    public boolean incluido(Intervalo otro) {
         return false;
     }
-    
-    public boolean solapado(Intervalo otro){
+
+    public boolean solapado(Intervalo otro) {
         return false;
     }
-    
-    public boolean concatenado(Intervalo otro){
+
+    public boolean concatenado(Intervalo otro) {
         return false;
+    }
+
+    public void simetrico() {
     }
 }
