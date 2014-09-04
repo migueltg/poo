@@ -60,4 +60,12 @@ public class Rectangulo {
         }
     }
 
+    public int ladoAncho() {
+        if (this.base > this.altura) {
+            return this.base;
+        } else {
+            return this.altura;
+        }
+    }
+
 }

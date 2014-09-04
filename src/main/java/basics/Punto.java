@@ -21,7 +21,7 @@ public class Punto {
         return Math.sqrt(this.x * this.x + this.y * this.y);
     }
 
-    public void desplazarX(int valor) {
+    public void desplazarX(int valorX) {
     }
 
     public void sumar(Punto otro) {
@@ -32,11 +32,11 @@ public class Punto {
         return false;
     }
 
-    public int cuadrante() {
-        return x;
+    public int cuadrante() { //1, 2, 3 y 4
+        return 0;
     }
 
-    public int coordenadaMayor() {
+    public int coordenadaMayor() { //0 es X, 1 es Y
         return 0;
     }
 }
