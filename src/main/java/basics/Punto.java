@@ -32,11 +32,11 @@ public class Punto {
         return false;
     }
 
-    public int cuadrante() { //1, 2, 3 y 4
+    public int cuadrante() { // 1, 2, 3 y 4
         return 0;
     }
 
-    public int coordenadaMayor() { //0 es X, 1 es Y
+    public int coordenadaMayor() { // 0 es X, 1 es Y
         return 0;
     }
 }

@@ -27,7 +27,7 @@ public class PointTest {
         if (point.module() > 3.6055 && point.module() < 3.6056)
             System.out.println("...Prueba modulo CORRECTA");
         else
-            System.out.println("ERROR: p. modulo:" + point.toString() + ":" + point.phase());
+            System.out.println("ERROR: p. modulo:" + point.toString() + ":" + point.module());
     }
 
     public void testPhase() {
