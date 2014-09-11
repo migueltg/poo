@@ -16,7 +16,7 @@ public class Addition {
         return operator2;
     }
 
-    public int add() {
+    public int sum() {
         return this.operator1 + this.operator2;
     }
 
