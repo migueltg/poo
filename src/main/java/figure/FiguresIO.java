@@ -1,12 +1,12 @@
 package figure;
 
-public class FigureMain {
+public class FiguresIO {
 
     public static void main(String[] args) {
         FiguresHandler fh = new FiguresHandler();
-        fh.addFigura(new Quadrilateral("c1", 2));
-        fh.addFigura(new Quadrilateral("c2", 3));
-        fh.addFigura(new Triangle("t1", 2, 3));
+        fh.addFigure(new Quadrilateral("c1", 2));
+        fh.addFigure(new Quadrilateral("c2", 3));
+        fh.addFigure(new Triangle("t1", 2, 3));
 
         System.out.println(fh.toString());
 

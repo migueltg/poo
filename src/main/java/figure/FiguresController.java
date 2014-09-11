@@ -11,12 +11,12 @@ public class FiguresController {
 
     public void addTriangle() {
         Triangle triangulo = (Triangle) IO.in.read(Triangle.class, "Dame un triangulo");
-        this.mf.addFigura(triangulo);
+        this.mf.addFigure(triangulo);
     }
 
     public void addQuadrilateral() {
         Quadrilateral cuadrado = (Quadrilateral) IO.in.read(Quadrilateral.class, "Dame un triangulo");
-        this.mf.addFigura(cuadrado);
+        this.mf.addFigure(cuadrado);
     }
 
     public void view() {
