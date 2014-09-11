@@ -57,8 +57,8 @@ public class Point {
     @Override
     public int hashCode() {
         final int prime = 31;
-        int result = prime + x;
-        result = prime * result + y;
+        int result = prime + this.x;
+        result = prime * result + this.y;
         return result;
     }
 
