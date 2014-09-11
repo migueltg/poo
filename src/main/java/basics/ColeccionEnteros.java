@@ -1,5 +1,7 @@
 package basics;
 
+import java.util.Arrays;
+
 public class ColeccionEnteros {
     public static final int MAX_TAMAÑO = 100;
 
@@ -30,6 +32,12 @@ public class ColeccionEnteros {
 
     public int tamaño() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "ColeccionEnteros [lista=" + Arrays.toString(lista) + ", numValores=" + numValores
+                + "]";
     }
 
 }
