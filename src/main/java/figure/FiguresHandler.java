@@ -3,12 +3,12 @@ package figure;
 import java.util.Arrays;
 
 public class FiguresHandler {
-    private Figure[] figuras;
+    private Figure[] figures;
 
     public void addFigura(Figure figura) {
     }
 
-    public Figure[] getFiguras() {
+    public Figure[] getFigures() {
         return null;
     }
 
@@ -18,7 +18,7 @@ public class FiguresHandler {
 
     @Override
     public String toString() {
-        return "ManejadorFiguras [figuras=" + Arrays.toString(figuras) + "]";
+        return "FiguresHandler [figures=" + Arrays.toString(figures) + "]";
     }
 
     public double sides() {

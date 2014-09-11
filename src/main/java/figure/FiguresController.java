@@ -9,18 +9,18 @@ public class FiguresController {
         this.mf = new FiguresHandler();
     }
 
-    public void addTriangulo() {
+    public void addTriangle() {
         Triangle triangulo = (Triangle) IO.in.read(Triangle.class, "Dame un triangulo");
         this.mf.addFigura(triangulo);
     }
 
-    public void addCuadrado() {
+    public void addQuadrilateral() {
         Quadrilateral cuadrado = (Quadrilateral) IO.in.read(Quadrilateral.class, "Dame un triangulo");
         this.mf.addFigura(cuadrado);
     }
 
-    public void verFiguras() {
-        IO.out.println(this.mf.getFiguras());
+    public void view() {
+        IO.out.println(this.mf.getFigures());
     }
 
     public static void main(String[] args) {
