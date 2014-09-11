@@ -1,14 +1,14 @@
-package figuras;
+package figure;
 
 import java.util.Arrays;
 
-public class ManejadorFiguras {
-    private Figura[] figuras;
+public class FiguresHandler {
+    private Figure[] figuras;
 
-    public void addFigura(Figura figura) {
+    public void addFigura(Figure figura) {
     }
 
-    public Figura[] getFiguras() {
+    public Figure[] getFiguras() {
         return null;
     }
 
@@ -16,9 +16,12 @@ public class ManejadorFiguras {
         return 0.0;
     }
 
-
     @Override
     public String toString() {
         return "ManejadorFiguras [figuras=" + Arrays.toString(figuras) + "]";
+    }
+
+    public double sides() {
+        return 0.0;
     }
 }
