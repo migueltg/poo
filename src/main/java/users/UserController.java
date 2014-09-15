@@ -31,8 +31,12 @@ public class UserController {
     public void update() {
         String id = IO.in.readString("Dame ID");
         User user = userHandler.read(id);
-        user = (User) IO.in.read(user, "");
-        userHandler.update(user);
+        if (user == null) {
+            IO.out.println("No se puede actualizar un usuario que no existe!");
+        } else {
+            user = (User) IO.in.read(user, "");
+            userHandler.update(user);
+        }
     }
 
     public void delete() {

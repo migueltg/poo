@@ -52,9 +52,8 @@ public class UserHandler {
 
     public void update(User user) {
         int index = this.find(user.getId());
-        if (index != -1) {
-            this.users[index] = user;
-        }
+        assert index != -1 : "Se debe crear primero";
+        this.users[index] = user;
     }
 
     @Override
