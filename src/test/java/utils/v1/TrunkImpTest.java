@@ -22,6 +22,7 @@ public class TrunkImpTest {
     @Test
     public void testPutGetNew() {
         String s = "UNO";
+        this.trunk.put("no", s);
         this.trunk.put("uno", s);
         assertSame(s, this.trunk.get("uno"));
     }
@@ -29,6 +30,7 @@ public class TrunkImpTest {
     @Test
     public void testPutGetUpdate() {
         String s = "UNO", s2 = "DOS";
+        this.trunk.put("no", s);
         this.trunk.put("uno", s);
         this.trunk.put("uno", s2);
         assertSame(s2, this.trunk.get("uno"));
