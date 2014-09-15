@@ -12,8 +12,8 @@ public class UserHandler {
     }
 
     private int find(String id) {
-        for (int i = 0; i < users.length; i++) {
-            if (users[i] != null && users[i].getId().equals(id)) {
+        for (int i = 0; i < this.users.length; i++) {
+            if (this.users[i] != null && this.users[i].getId().equals(id)) {
                 return i;
             }
         }
@@ -23,9 +23,9 @@ public class UserHandler {
     public boolean create(User user) {
         boolean result = false;
         if (this.find(user.getId()) == -1) {
-            for (int i = 0; i < users.length; i++) {
-                if (users[i] == null) {
-                    users[i] = user;
+            for (int i = 0; i < this.users.length; i++) {
+                if (this.users[i] == null) {
+                    this.users[i] = user;
                     result = true;
                     break;
                 }
@@ -37,7 +37,7 @@ public class UserHandler {
     public User read(String id) {
         int index = this.find(id);
         if (index != -1) {
-            return users[index];
+            return this.users[index];
         } else {
             return null;
         }

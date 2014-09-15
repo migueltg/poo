@@ -3,7 +3,7 @@ package utils;
 public interface Trunk {
     public static final int MAX_SIZE = 10;
 
-    public void put(String key, Object objeto);
+    public void put(String key, Object object);
 
     public Object get(String key);
 

@@ -7,7 +7,7 @@ public class TrunkImp implements Trunk {
     }
 
     @Override
-    public void put(String key, Object objeto) {
+    public void put(String key, Object object) {
     }
 
     @Override
