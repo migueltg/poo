@@ -1,12 +1,12 @@
 package basics;
 
-public class Punto {
+public class Point {
     private int x, y;
 
-    public Punto(int x, int y) {
+    public Point(int x, int y) {
     }
 
-    public Punto() {
+    public Point() {
     }
 
     public int getX() {
@@ -27,11 +27,11 @@ public class Punto {
     public void desplazarY(int despY) {
     }
 
-    public void sumar(Punto otro) {
+    public void sumar(Point otro) {
 
     }
 
-    public boolean mismoCuadrante(Punto otro) {
+    public boolean mismoCuadrante(Point otro) {
         return false;
     }
 
@@ -63,7 +63,7 @@ public class Punto {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Punto other = (Punto) obj;
+        Point other = (Point) obj;
 
         return (x == other.x && y == other.y);
     }
