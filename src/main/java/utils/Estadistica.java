@@ -9,9 +9,9 @@ public interface Estadistica {
     public void limpiar();
     public int positivos();
     public int negativos();
-    public void ceros();
+    public int ceros();
     public double mayor();
-    public void menor();
+    public double menor();
     public double media();//Suma de valores dividido por el número de valores
-    public void varianza();//suma de lor (valores)al cuadrado dividido por el numero de valores - media al cuadrado
+    public double varianza();//suma de lor (valores)al cuadrado dividido por el numero de valores - media al cuadrado
 }
